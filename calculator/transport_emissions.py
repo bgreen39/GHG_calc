@@ -26,3 +26,8 @@ if unit == "gallon":
 #calculate emissions in kg
 emissions_kg = value * ef
 emissions_metric_tons = emissions_kg / 1000
+
+# gasoline density= 
+# diesel density= 0.75 kg/L
+# compressed natural gas density= 
+# ethanol density= 
