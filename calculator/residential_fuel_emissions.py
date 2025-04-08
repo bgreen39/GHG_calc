@@ -15,7 +15,7 @@ def gas_emissions_co2(value, unit="kwh", output_unit="metric_tons"):
 
 # METHANE (CH4) Emissions
 # *create definition for this function*
-def gas_emissions_ch4(value, unit="kwh","mwh",output_unit="metric_tons","tons"):
+def gas_emissions_ch4(value, unit="kwh",output_unit="metric_tons"):
 #Emissions factor (ef) from kg co2e per kwh
 #     *updated from excel (kg co2 per Mwh)
 ch42_EF= 0.023
@@ -28,7 +28,7 @@ emissions_metric_tons = emissions_kg / 1000
 
 # Nitrous Oxide (N2O) Emissions
 # *create definition for this function*
-def gas_emissions_n2o(value, unit="kwh","mwh",output_unit="metric_tons","tons"):
+def gas_emissions_n2o(value, unit="kwh",output_unit="metric_tons"):
 #Emissions factor (ef) from kg co2e per kwh
 #     *updated from excel (kg co2 per Mwh)
 n2o_EF= 0.003
