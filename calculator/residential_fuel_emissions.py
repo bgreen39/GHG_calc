@@ -23,8 +23,9 @@ ch42_EF= 0.023
 if unit == "mwh":
   value *= 1000 
 #calculate emissions in kg
-emissions_kg = value * ef
-emissions_metric_tons = emissions_kg / 1000
+emissions_kg = value * ch4_ef
+ emissions = emissions_kg / 1000 if output_unit == "metric_tons" else emissions_kg * 0.00110231  # to short tons
+    return emissions
 
 # Nitrous Oxide (N2O) Emissions
 # *create definition for this function*
