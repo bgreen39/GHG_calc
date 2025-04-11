@@ -38,6 +38,7 @@ if unit == "mwh":
   value *= 1000 
 #calculate emissions in kg
 emissions_kg = value * ef
-emissions_metric_tons = emissions_kg / 1000
+emissions_kg / 1000 if output_unit == "metric_tons" else emissions_kg * 0.00110231  # to short tons
+    return emissions
 
 
